@@ -98,7 +98,7 @@
       <div class="prog-card"><h3>Πιστοποιήσεις</h3><p>Καθοδήγηση στην επιλογή του κατάλληλου φορέα και επιπέδου πιστοποίησης ανά γλώσσα.</p></div>
       <div class="prog-card"><h3>Ιδιαίτερα μαθήματα</h3><p>Εξατομικευμένη διδασκαλία, ένας προς έναν, για γρηγορότερη πρόοδο.</p></div>
     </div>
-  
+ 
 </section>
 
 <section class="deep" id="exams">
@@ -160,6 +160,7 @@
       <div class="teach-card"><div class="teach-photo"><img src="assets/teacher-it-1.jpg" alt="Παναγιώτα Κουράκλη"></div><h4>Παναγιώτα Κουράκλη</h4><span class="role">Αγγλικά &amp; Ιταλικά</span><p>Έμπειρη καθηγήτρια με σύγχρονες μεθόδους διδασκαλίας και αγάπη για τη μάθηση.</p></div>
       <div class="teach-card"><div class="teach-photo"><img src="assets/teacher-en-2.jpg" alt="Ρούλα Κουράκλη" class="face-top"></div><h4>Ρούλα Κουράκλη</h4><span class="role">Αγγλικά</span><p>Καθηγήτρια με πολυετή εμπειρία, προσαρμοσμένη διδασκαλία και έμφαση στην πρόοδο κάθε μαθητή.</p></div>
     </div>
+    
 </section>
 
 <section id="about">
@@ -172,7 +173,8 @@
       <p>Το Kouraklis Language School ιδρύθηκε με στόχο να προσφέρει ποιοτική εκμάθηση αγγλικών και ιταλικών, με σεβασμό στον ρυθμό και τις ανάγκες κάθε μαθητή.</p>
       <p>Μέσα από ολιγομελή τμήματα, σύγχρονες μεθόδους διδασκαλίας και συνεχή επικοινωνία με γονείς και μαθητές, στόχος μας είναι να αναπτύξουμε πραγματικές γλωσσικές δεξιότητες — όχι απλώς να προετοιμάσουμε για εξετάσεις.</p>
       <p>Η εμπειρία μας δείχνει ότι η μάθηση μιας γλώσσας είναι ταξίδι, όχι προορισμός — και είμαστε εδώ για να το συνοδεύσουμε βήμα-βήμα.</p>
-     
+      <p class="note">* Το κείμενο να αντικατασταθεί με την πραγματική ιστορία και φιλοσοφία της σχολής.</p>
+    </div>
   </div>
 </section>
 
@@ -199,17 +201,26 @@
         <p>Συμπληρώστε τη φόρμα ενδιαφέροντος και θα επικοινωνήσουμε μαζί σας άμεσα για να βρούμε το κατάλληλο τμήμα.</p>
         <a href="#contact" class="btn btn-primary">Κάντε αίτηση / Επικοινωνήστε μαζί μας</a>
       </div>
-      <form class="enroll">
-        <input type="text" placeholder="Ονοματεπώνυμο">
+      <form class="enroll" action="https://formsubmit.co/kouraklislanguageschool@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Νέα αίτηση ενδιαφέροντος — Kouraklis Language School">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="text" name="Ονοματεπώνυμο" placeholder="Ονοματεπώνυμο" required>
         <div class="row2">
-          <input type="tel" placeholder="Τηλέφωνο">
-          <input type="email" placeholder="Email">
+          <input type="tel" name="Τηλέφωνο" placeholder="Τηλέφωνο" required>
+          <input type="email" name="Email" placeholder="Email" required>
         </div>
         <div class="row2">
-          <select><option>Γλώσσα ενδιαφέροντος</option><option>Αγγλικά</option><option>Ιταλικά</option></select>
-          <input type="text" placeholder="Ηλικία / Τάξη">
+          <select name="Γλώσσα ενδιαφέροντος" required>
+            <option value="" selected disabled>Γλώσσα ενδιαφέροντος</option>
+            <option value="Αγγλικά">Αγγλικά</option>
+            <option value="Ιταλικά">Ιταλικά</option>
+          </select>
+          <input type="text" name="Ηλικία / Τάξη" placeholder="Ηλικία / Τάξη">
         </div>
-        <textarea rows="3" placeholder="Μήνυμα"></textarea>
+        <textarea rows="3" name="Μήνυμα" placeholder="Μήνυμα"></textarea>
+        <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Αποστολή αίτησης</button>
       </form>
     </div>
   </div>
@@ -242,7 +253,7 @@
         <div class="faq-q">Προσφέρετε Ιταλικά για αρχάριους; <span class="plus">+</span></div>
         <div class="faq-a"><p>Φυσικά — τα τμήματα Ιταλικών ξεκινούν από το επίπεδο Α1, χωρίς προαπαιτούμενες γνώσεις.</p></div>
       </div>
- 
+    </div>
 
 </section>
 
@@ -257,7 +268,7 @@
       <div>Δραστηριότητα</div><div>Εκδήλωση</div><div>Αίθουσα</div>
       <div>Εκδήλωση</div><div>Μαθητές</div><div>Βραβεύσεις</div>
     </div>
-
+   
 </section>
 
 <section id="contact" class="deep">
