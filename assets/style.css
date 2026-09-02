@@ -1,4 +1,4 @@
- :root{
+:root{
     --ink:#0F2A52;
     --ink-soft:#3A5A85;
     --parchment:#FFFFFF;
@@ -254,6 +254,7 @@
     border-radius:2px;
   }
   form.enroll input::placeholder, form.enroll textarea::placeholder{ color:rgba(247,243,233,0.45); }
+  form.enroll select option{ color:var(--ink); background:var(--parchment); }
   form.enroll .row2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
   .enroll-box .btn-primary{ background:var(--gold); border-color:var(--gold); color:var(--ink); width:fit-content; }
   .enroll-box .btn-primary:hover{ background:var(--brick); border-color:var(--brick); color:var(--parchment); }
