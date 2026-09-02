@@ -292,7 +292,7 @@
   .map-box{
     border:1.5px solid var(--ink); background:var(--parchment-deep);
     display:flex; align-items:center; justify-content:center; min-height:280px;
-    font-family:var(--stamp); font-size:0.8rem; color:var(--ink); opacity:0.5;
+    font-family:var(--stamp); font-size:0.8rem; color:var(--ink);
   }
   .contact-actions{ display:flex; gap:12px; margin-top:26px; flex-wrap:wrap; }
   @media (max-width:880px){ .contact-grid{grid-template-columns:1fr;} }
